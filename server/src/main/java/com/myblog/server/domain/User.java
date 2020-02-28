@@ -1,5 +1,8 @@
 package com.myblog.server.domain;
 
+import java.util.HashSet;
+import java.util.Set;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -12,15 +15,14 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 /**
- * Admin
+ * User
  */
 @Entity
+@Table(name="users")
 @Getter
 @Setter
 @NoArgsConstructor
-@AllArgsConstructor
-@Table(name="admin")
-public class Admin extends DataAudit{
+public class User extends DataAudit{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -30,5 +32,14 @@ public class Admin extends DataAudit{
     private String email;
     private String password;
 
-    
+    private Set<Role> roles = new HashSet<>();
+
+    public User(Long id, String name, String username, String email, String password) {
+        this.id = id;
+        this.name = name;
+        this.username = username;
+        this.email = email;
+        this.password = password;
+    }
+
 }
