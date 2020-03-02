@@ -1,18 +1,12 @@
 package com.myblog.server.domain;
 
-import java.util.HashSet;
-import java.util.Set;
-
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
-
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+
+import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * User
@@ -34,8 +28,7 @@ public class User extends DataAudit{
 
     private Set<Role> roles = new HashSet<>();
 
-    public User(Long id, String name, String username, String email, String password) {
-        this.id = id;
+    public User(String name, String username, String email, String password) {
         this.name = name;
         this.username = username;
         this.email = email;
