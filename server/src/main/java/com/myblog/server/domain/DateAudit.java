@@ -27,7 +27,7 @@ import lombok.Setter;
 )
 @Getter
 @Setter
-public abstract class DataAudit implements Serializable{
+public abstract class DateAudit implements Serializable{
 
     @CreatedDate
     @Column(nullable = false, updatable = false)
