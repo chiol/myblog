@@ -33,9 +33,9 @@ const BannerTemplete = styled.div `
 const FlexContainer = styled.div `
     display: flex;
     width: 90%;
+    justify-content: center;
 `;
 const FlexItem = styled.div<styledProp> `
-    width: 33.3%;
     display: flex;
     flex-direction: ${(props:styledProp) => props.col || 'column'};
 `;

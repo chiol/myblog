@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components';
 import logo from '../static/img/invalid-name.png'
 import "./Bar.scss";
-import media from '../util/styles/media';
+
 function Bar() {
     return (
         <DivBar>
