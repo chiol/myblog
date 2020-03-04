@@ -5,8 +5,8 @@ import AdminPage from './pages/AdminPage';
 function App() {
   return (
     <div>
-      {/* <HomePage/> */}
-      <AdminPage/>
+      <HomePage/>
+      {/* <AdminPage/> */}
     </div>
   );
 }

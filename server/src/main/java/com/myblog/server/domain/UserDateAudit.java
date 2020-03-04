@@ -20,8 +20,8 @@ public class UserDateAudit extends DateAudit {
 
     @CreatedBy
     @Column(updatable = false)
-    private Long createBy;
+    private Long createdBy;
 
     @LastModifiedBy
-    private Long updateBy;
+    private Long updatedBy;
 }

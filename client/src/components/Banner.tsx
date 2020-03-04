@@ -38,5 +38,9 @@ const FlexItem = styled.div<styledProp> `
     width: 33.3%;
     display: flex;
     flex-direction: ${(props:styledProp) => props.col || 'column'};
+    font-size:16px;
+    div{
+        font-size: 0.9rem;
+    }
 `;
 export default Banner
