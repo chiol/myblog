@@ -1,4 +1,4 @@
-export interface  UserSummary{
+export interface UserSummary{
     id: number,
     username: string,
     name: string

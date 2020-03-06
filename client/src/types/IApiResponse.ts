@@ -1,4 +1,4 @@
-import { Board } from "./typeInterface";
+import { Board } from "./ITypes";
 
 export interface SignupResponse {
     success: boolean,

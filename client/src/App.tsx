@@ -4,6 +4,7 @@ import "./App.css";
 import AdminPage from './pages/AdminPage';
 import { BrowserRouter, Route } from 'react-router-dom';
 import SigninPage from './pages/SigninPage';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
